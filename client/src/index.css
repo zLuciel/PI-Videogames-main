@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&display=swap');
+:root {
+  --color-primario: #CCFF00;
+  --color-segundario: white;
+}
+
+*,html{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #0B0B0B;
+  color: var(--color-segundario);
+  min-height: 100vh;
+}
+::-webkit-scrollbar {
+border-radius: 10px;
+display: initial;
+width: 6px;
+height: 7px;
+background-color: black;
+}
+::-webkit-scrollbar-thumb {
+border-radius: 50px;
+background-color: var(--color-primario);
+}
+.app{
+  position: relative;
+  display: flex;
+}
+a{
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+/**formulario*/
+.form-bg{
+color: white;
+background: rgba(0, 0, 0, 0.13);
+border: 1px solid #000000;
+backdrop-filter: blur(12.5px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 5px;
+padding: 0 10px;
+outline: none;
+}
+.form-row{
+  display: flex;
+  row-gap: 5px;
+  flex-direction: column;
+}
+.text-label{
+  color: var(--color-primario);
+  font-size: 1.3rem;
+}
+.selectForm{
+  position: relative;
+  border-radius: 25px;
+  width: 155px;
+  height: 35px;
+  appearance: none;
+}
+
+.selectForm > option{
+  background: #0B0B0B;
+}
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+}
+@media screen and (max-width: 1220px){
+  .filter{
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.hamburgue{
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: greenyellow;
+  right: 5%;
+  top: 25%;
+  cursor: pointer;
+  z-index: 800;
+  position: fixed;
+}
+@media screen and (max-width: 1435px){
+  .hamburgue{
+    display: block;
+  }
+}
+.error{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+}
