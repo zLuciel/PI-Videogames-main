@@ -8,6 +8,7 @@ import LadingPage from "./components/LadingPage";
 //import { GiHamburgerMenu } from 'react-icons/gi';
 import axios from "axios"
 axios.defaults.baseURL = process.env.REACT_APP_API_URL
+
 function App() {
   const location = useLocation();
   const [visible,setVisible] = useState(false)

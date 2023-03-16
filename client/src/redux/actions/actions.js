@@ -21,7 +21,7 @@ export const getDetails = (id) => async (dispatch) => {
 
 export const getGeneros = () => async (dispatch) => {
   try {
-    const res = await axios.get(`videogames/genres`);
+    const res = await axios.get(`/genres`);
     dispatch({type:GET_GENEROS,payload:res.data});
   } catch (error) {
     console.log(error);
