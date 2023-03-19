@@ -1,8 +1,6 @@
 import { GENERO_FILTER, GET_CREATE_FILTER, GET_DETAILS, GET_GAMES, GET_GENEROS, GET_SEARCH, POST_CREATE, SORT } from "../actions-types/action-types";
 
-/*const ID = state.users.find(user => user.id === action.payload)*/
-//const indexs = state.users.indexOf(action.payload)
-//const xdd = state.users.splice(state.users.indexOf(action.payload),1)
+
 const initialState = {
   games: [],
   detail:{},
@@ -36,6 +34,7 @@ const reducer = (state = initialState, action) => {
       
       return {
         ...state,
+        typePag:20,
         games: options[action.payload],
       };
       case GET_GENEROS:return{

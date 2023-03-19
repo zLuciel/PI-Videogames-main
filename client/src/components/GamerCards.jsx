@@ -19,11 +19,11 @@ export const GamerCards = ({img,rating,released,name,id,genres}) => {
                 <span className='fecha-card'><p>Date</p>: <p>{released}</p></span>
                 {<p className='genres-card'>{genres.length && genres.join(" - ")}</p>}
                 <span className='icon-star'>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i className="fa-solid fa-star"></i></li>
+                    <li><i className="fa-solid fa-star"></i></li>
+                    <li><i className="fa-solid fa-star"></i></li>
+                    <li><i className="fa-solid fa-star"></i></li>
+                    <li><i className="fa-solid fa-star"></i></li>
                 </span>
                 <div className='btn-content'>
                     <button onClick={handleDetails}>View info</button>

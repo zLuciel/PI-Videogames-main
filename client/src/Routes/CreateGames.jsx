@@ -1,7 +1,7 @@
 import {useState} from "react";
-import { ContainerForm, ContainerLoli, CreateContainer } from "./css/CreateGames";
+import { ContainerForm, ContainerLoli, CreateContainer } from "../components/css/CreateGames";
 import fondo from "../assets/fondo.webp";
-import { Form } from "./Form";
+import { Form } from "../components/Form";
 import Loli from "../assets/FormLoli.png"
 
 

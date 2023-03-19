@@ -13,21 +13,12 @@ const BtnGender = () => {
     const newValue = event.target.value;
     setOpcionSeleccionada(newValue);
     dispatch(generoFilter(newValue))
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[]);
+  },[dispatch]);
 
- /*useEffect(()=>{
-   dispatch(generoFilter(opcionSeleccionada))
- // eslint-disable-next-line react-hooks/exhaustive-deps
- },[opcionSeleccionada])*/
-
-
-  
   return (
     <BtnSyled value={opcionSeleccionada} onChange={handleChange}>
     <option  value="" disabled defaultValue >Gender</option>
-  
-    {Generos.map(gen=> <option value={gen}>{gen}</option> )}
+    {Generos.map(gen=> <option key={gen} value={gen}>{gen}</option> )}
   </BtnSyled>
   )
 }

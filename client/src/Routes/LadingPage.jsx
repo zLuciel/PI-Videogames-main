@@ -1,5 +1,5 @@
 import {useState,useRef,useEffect} from 'react'
-import { Circulo, ContainerLading } from './css/LadingPage'
+import { Circulo, ContainerLading } from '../components/css/LadingPage'
 import { useNavigate} from "react-router-dom";
 import Paisaje from "../assets/paisaje2.jpg"
 import Paisaje1 from "../assets/paisaje.jpg"

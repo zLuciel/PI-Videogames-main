@@ -65,7 +65,12 @@ outline: none;
   height: 35px;
   appearance: none;
 }
-
+.areatext{
+  max-width: 374px;
+  min-width: 374px;
+  min-height: 69px;
+  max-height: 69px;
+}
 .selectForm > option{
   background: #0B0B0B;
 }

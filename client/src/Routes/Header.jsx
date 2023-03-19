@@ -1,6 +1,6 @@
 import React from "react";
 import {NavLink} from "react-router-dom"
-import { Configuracion, HeaderContainer, NavContainer } from "./css/Header";
+import { Configuracion, HeaderContainer, NavContainer } from "../components/css/Header";
 const Header = ({visible}) => {
   return (
     <HeaderContainer visible={visible}>

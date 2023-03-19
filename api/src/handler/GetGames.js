@@ -37,9 +37,9 @@ const getGames = async (req, res) => {
       let gamess = await Search(games,name,url)
       if(!gamess.length) gamess = "NO"
       console.log(gamess);
-      res.status(200).json({type:true,games:gamess});
+      res.status(200).json({type:15,games:gamess});
     }else{
-    res.status(200).json({type:false,games});
+    res.status(200).json({type:20,games});
     }
    
   } catch (error) {

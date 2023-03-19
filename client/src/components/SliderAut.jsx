@@ -9,11 +9,13 @@ import img4 from "../assets/Halo.jpg"
  const SliderAut = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slideshow = useRef(null);
+
   const updateSlidePosition = (slideIndex) => {
     setCurrentSlide(slideIndex);
     slideshow.current.style.transform = `translateX(-${slideIndex * 100}%)`;
     slideshow.current.style.transition = "transform 400ms ease-out";
   };
+
   const handlePlay=()=>{
     let video;
     if(currentSlide === 0 ) video = "https://www.youtube.com/watch?v=rFh2i4AlPD4"
@@ -45,7 +47,7 @@ import img4 from "../assets/Halo.jpg"
           <img src={img2} alt="GodOfWard" />
         </Slide>
         <Slide>
-          <img src={img3} alt=""  />
+          <img src={img3} alt="Cyber"  />
         </Slide>
       </ContainerSlideShow>
       <BtnSlider>

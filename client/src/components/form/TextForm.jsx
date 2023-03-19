@@ -6,7 +6,7 @@ const TextForm = ({Form,setForm,name,title,type}) => {
     const handleNameChange = (event) => {
         const newName = event.target.value;
         // Validar que el nombre solo tenga letras y no esté vacío
-        const regex = /^[a-zA-Z]+$/;
+        const regex = /^[a-zA-Z ]+$/;
         if (newName === "" || regex.test(newName)) {
           setForm({...Form,name:newName});
           setError("");

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { DetailsContainer, DetailsInfo } from "./css/Information";
+import { DetailsContainer, DetailsInfo } from "../components/css/Information";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getDetails } from "../redux/actions/actions";
@@ -33,7 +33,7 @@ const Information = () => {
       </div>
       <DetailsInfo>
         <div className="center-details">
-          <h1>{Detail.name}</h1>
+          <h1>{Detail.name.charAt(0).toUpperCase() + Detail.name.slice(1)}</h1>
           <p className="description" dangerouslySetInnerHTML={{ __html: Detail.description }}/>
           <div>
             <h3>Platform</h3>

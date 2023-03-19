@@ -11,7 +11,7 @@ import React from 'react'
   <div className="form-row">
   <label className='text-label' htmlFor="description">Descripción</label>
   <textarea
-  className='form-bg'
+  className='form-bg areatext'
     id="description"
     name="description"
     rows="4"

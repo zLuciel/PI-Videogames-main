@@ -1,7 +1,7 @@
 import React from 'react'
-import { HomeContainer } from './css/Home'
-import Gamers from './Gamers'
-import Main from './Main'
+import { HomeContainer } from '../components/css/Home'
+import Gamers from '../components/Gamers'
+import Main from '../components/Main'
 
 export const Home = () => {
   return (

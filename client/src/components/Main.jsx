@@ -9,8 +9,8 @@ const Main = () => {
       <RedeSocial>
         <ul>
           <li><a href="https://www.facebook.com/emmanuel.abregu.92" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-facebook"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/emmanuel-abregù-270175220/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a></li>
-          <li><a href="https://github.com/zLuciel" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/emmanuel-abregù-270175220/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="https://github.com/zLuciel" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a></li>
         </ul>
       </RedeSocial>
       <SliderAut/>

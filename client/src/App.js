@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { CreateGames } from "./components/CreateGames";
-import Header from "./components/Header";
-import { Home } from "./components/Home";
-import Information from "./components/Information";
-import LadingPage from "./components/LadingPage";
-//import { GiHamburgerMenu } from 'react-icons/gi';
+import { CreateGames } from "./Routes/CreateGames";
+import Header from "./Routes/Header";
+import { Home } from "./Routes/Home";
+import Information from "./Routes/Information";
+import LadingPage from "./Routes/LadingPage";
 import axios from "axios"
 axios.defaults.baseURL = process.env.REACT_APP_API_URL
 
 function App() {
+  
   const location = useLocation();
   const [visible,setVisible] = useState(false)
   const handleFlex=()=>{
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="app">
-      {location.pathname !== '/' && <button onClick={handleFlex} className="hamburgue">icono de hamburgue</button>}
+      {location.pathname !== '/' && <button onClick={handleFlex} className="hamburgue"><i className="fa-solid fa-bars"></i></button>}
      {location.pathname !== '/' && <Header visible={visible} />}
       <Routes>
         <Route path="/" element={<LadingPage/>} />
