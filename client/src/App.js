@@ -9,7 +9,6 @@ import axios from "axios"
 axios.defaults.baseURL = "https://pi-videogames-main-production-ca73.up.railway.app"
 
 function App() {
-  
   const location = useLocation();
   const [visible,setVisible] = useState(false)
   const handleFlex=()=>{
