@@ -15,7 +15,6 @@ const Gamers = () => {
 
   const [page, setPage] = useState(0);
 
- console.log(allGames);
   useEffect(() => {
     if (allGames.length === 0) {
       dispatch(getGames());
