@@ -1,6 +1,6 @@
 const { Genres } = require("../db");
 const axios = require('axios');
-const url ="https://api.rawg.io/api/genres?key=380851f095cd486fa474d885f1f65ee1";
+const url ="https://api.rawg.io/api/genres?key=baa03f69686f4e2ba568be7123c28b39";
 const createGenres = async () => {
   try {
     const response = await axios.get(url);
