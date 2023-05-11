@@ -23,11 +23,10 @@ const { conn } = require('./src/db.js');
 require('dotenv').config();
 const { PORT} = process.env;
 // Syncing all the models at once.
-const creando = async ()=> await createGenres()
-creando()
 
-conn.sync({ force: true }).then(() => {
-  
+
+conn.sync({ force: true }).then( async () => {
+   await createGenres()
   server.listen(PORT, () => {
     console.log('%s listening at',PORT); // eslint-disable-line no-console
   });

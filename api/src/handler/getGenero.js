@@ -1,5 +1,4 @@
 const { Genres } = require("../db");
-const axios = require('axios');
 
 const CreateGender = async (req, res) => {
   try {

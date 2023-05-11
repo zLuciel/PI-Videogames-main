@@ -7,7 +7,7 @@ const getDetails = async (req, res) => {
   try {
     let detApi;
     if(!idVideogame.includes("-")){
-      const url =`https://api.rawg.io/api/games/${idVideogame}?key=380851f095cd486fa474d885f1f65ee1`;
+      const url =`https://api.rawg.io/api/games/${idVideogame}?key=baa03f69686f4e2ba568be7123c28b39`;
        detApi = await Details(url)
     }else{
       detApi = await Detaildb(idVideogame)

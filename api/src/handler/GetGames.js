@@ -1,6 +1,6 @@
 const ApiGames = require("../controllers/ApiGames");
 const Search = require("../controllers/Search");
-const url ="https://api.rawg.io/api/games?key=380851f095cd486fa474d885f1f65ee1";
+const url ="https://api.rawg.io/api/games?key=baa03f69686f4e2ba568be7123c28b39";
 const { Videogame, Genres } = require("../db");
 
 const getDbGames = async () => {
