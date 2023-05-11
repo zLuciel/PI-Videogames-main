@@ -25,9 +25,9 @@ const { PORT} = process.env;
 // Syncing all the models at once.
 
 
-conn.sync({ force: true }).then( async () => {
+conn.sync({ force: false }).then( async () => {
    await createGenres()
   server.listen(PORT, () => {
-    console.log('%s listening at',PORT); // eslint-disable-line no-console
+    console.log('%s listening at',PORT); 
   });
 });
