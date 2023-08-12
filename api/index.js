@@ -29,6 +29,6 @@ const port = process.env.PORT || 3001
 conn.sync({ force: false }).then( async () => {
    await createGenres()
   server.listen(port, () => {
-    console.log('%s listening at',PORT); 
+    console.log('%s listening at',port); 
   });
 });
