@@ -3,11 +3,12 @@ const { Sequelize } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
 const {DB_USER, DB_PASSWORD, DB_HOST,DB_PORT,DB_NAME} = process.env;
-//postgresql://postgres:UlssfVHonC4dpLwAQWga@containers-us-west-107.railway.app:6586/railway
+//'postgres://avnadmin:AVNS_Orjzo4mQAJhxXNb_Rns@pg-16131f6d-emmanuelabregu1999-e734.aivencloud.com:27588/defaultdb?sslmode=require'
 const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`, {
   logging: false, // set to console.log to see the raw SQL queries
   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
 });
+
 const basename = path.basename(__filename);
 
 const modelDefiners = [];
