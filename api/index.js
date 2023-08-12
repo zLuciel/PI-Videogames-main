@@ -21,13 +21,14 @@ const server = require('./src/app.js');
 const createGenres = require('./src/controllers/CreateGenders.js');
 const { conn } = require('./src/db.js');
 require('dotenv').config();
-const { PORT} = process.env;
+
+const port = process.env.PORT || 3001
 // Syncing all the models at once.
 
 
 conn.sync({ force: false }).then( async () => {
    await createGenres()
-  server.listen(PORT, () => {
+  server.listen(port, () => {
     console.log('%s listening at',PORT); 
   });
 });
