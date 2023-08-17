@@ -6,7 +6,7 @@ import { Home } from "./Routes/Home";
 import Information from "./Routes/Information";
 import LadingPage from "./Routes/LadingPage";
 import axios from "axios"
-axios.defaults.baseURL = "http://localhost:3001" //https://pi-videogames-main-production-ca73.up.railway.app"
+axios.defaults.baseURL = "https://game-api-s135-dev.fl0.io/" //https://pi-videogames-main-production-ca73.up.railway.app"
 
 function App() {
   const location = useLocation();
